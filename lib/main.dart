@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hobby/provider/dark_theme_provider.dart';
+import 'package:hobby/screens/btm_bar.dart';
 import 'package:hobby/screens/home_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -47,7 +48,7 @@ class _MyAppState extends State<MyApp> {
             debugShowCheckedModeBanner: false,
             title: 'Hobby Bolivia',
             theme: Styles.themeData(themeProvider.getDarkTheme, context),
-            home: HomeScreen());
+            home: BottomBarScreen());
       }),
     );
   }
